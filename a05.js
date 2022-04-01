@@ -422,6 +422,7 @@ function makeBillboardBuffers(){
 	
 	// Create a texture.
 	var billboardTextureBuffer = gl.createTexture();
+	gl.activeTexture(gl.TEXTURE0);
 	gl.bindTexture(gl.TEXTURE_2D, billboardTextureBuffer);
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA,gl.UNSIGNED_BYTE, imageData);
     gl.generateMipmap(gl.TEXTURE_2D);
