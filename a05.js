@@ -177,7 +177,7 @@ function drawScene() {
 	}
 	
 	// Call drawScene again next frame with delay to give user chance of interacting GUI
-	setTimeout(function() { requestAnimationFrame(drawScene)}, 500);
+	setTimeout(function() { requestAnimationFrame(drawScene)}, 10);
 }
 
 function renderingFcn(){
